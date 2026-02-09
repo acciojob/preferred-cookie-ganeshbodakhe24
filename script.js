@@ -8,6 +8,8 @@ form.addEventListener("submit", function(event) {
 
     document.cookie = `fontsize=${fontsize}`;
     document.cookie = `fontcolor=${fontcolor}`;
+	 document.documentElement.style.setProperty("--fontsize", `${fontsize}px`);
+    document.documentElement.style.setProperty("--fontcolor", `${fontcolor}`);
 });
 
 if (document.cookie) {
